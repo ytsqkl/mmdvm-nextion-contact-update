@@ -1,11 +1,11 @@
-mount -o remount,rw /
+sudo mount -o remount,rw /
 echo "Download DMRIds and Hostfiles.." 
-rpi-rw  
+sudo rm -rf /tmp/mmdvm-CNcontact  
 cd /tmp  
 sudo git clone https://gitee.com/ytqkl/mmdvm-CNcontact.git  
 cd /tmp/mmdvm-CNcontact   
 sudo mv stripped.csv /usr/local/etc
-mount -o remount,ro /
+sudo mount -o remount,ro /
 sudo systemctl stop pistar-watchdog.service > /dev/null 2>&1
 sudo systemctl stop mmdvmhost.service > /dev/null 2>&1 && sleep 2 > /dev/null 2>&1 
 sudo systemctl start pistar-watchdog.service# > /dev/null 2>&1
