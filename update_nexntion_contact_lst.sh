@@ -1,3 +1,4 @@
+lst
 rpi-rw  
 cd /tmp  
 sudo git clone https://gitee.com/ytqkl/mmdvm-CNcontact.git  
