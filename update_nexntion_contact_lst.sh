@@ -1,3 +1,4 @@
+echo "Download NextionDriver DMRIds " 
 sudo mount -o remount,rw /
 echo "Download DMRIds and Hostfiles.." 
 sudo rm -rf /tmp/mmdvm-CNcontact  
